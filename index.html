@@ -811,33 +811,23 @@ footer{
     </div>
 
     <!-- contact form -->
-    <form id="contact-form" action="https://formspree.io/f/mwvwwbav" method="POST" class="c-form">
-      <div class="c-form-row">
-        <div class="c-field">
-          <label class="c-label">Your Name</label>
-          <input type="text" name="name" placeholder="Jane Smith" required class="c-input"/>
-        </div>
-        <div class="c-field">
-          <label class="c-label">Your Email</label>
-          <input type="email" name="email" placeholder="jane@example.com" required class="c-input"/>
-        </div>
-      </div>
-      <div class="c-field">
-        <label class="c-label">Subject</label>
-        <input type="text" name="subject" placeholder="Opportunity / Collaboration / Question" class="c-input"/>
-      </div>
-      <div class="c-field">
-        <label class="c-label">Message</label>
-        <textarea name="message" rows="5" placeholder="Tell me about the opportunity..." required class="c-input c-textarea"></textarea>
-      </div>
-      <button type="submit" class="c-submit btn btn-mint" id="submit-btn">Send Message</button>
-      <div id="form-success" class="c-success" style="display:none">
-        ✓ Message sent! I'll get back to you soon.
-      </div>
-      <div id="form-error" class="c-error" style="display:none">
-        Something went wrong. Please email me directly at sukhkirandeep.kaur@gmail.com
-      </div>
-    </form>
+    <form id="contact-form" action="https://formspree.io/f/mwvwwbav" method="POST">
+
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" placeholder="Your Message" required></textarea>
+
+  <button id="submit-btn" type="submit">Send Message</button>
+
+  <p id="form-success" style="display:none; color:green;">
+    ✅ Message sent! I'll get back to you soon.
+  </p>
+
+  <p id="form-error" style="display:none; color:red;">
+    ❌ Something went wrong. Please email me directly.
+  </p>
+
+</form>
   </div>
 </section>
 
